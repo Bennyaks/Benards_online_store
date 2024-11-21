@@ -1,0 +1,9 @@
+<div class="product-container">
+    <div class="product-card">
+        <img src="assets/product1.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>$20.00</p>
+        <button onclick="addToCart(1)">Add to Cart</button>
+    </div>
+    <!-- Repeat for other products -->
+</div>
