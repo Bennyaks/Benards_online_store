@@ -1,16 +1,16 @@
 body {
-    background-color: #f1f1f1; /* Light grey background */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('assets/background.jpg'); /* Background image */
-    background-size: cover;
-    background-position: center;
+    background-image: url('assets/background.jpg'); /* Set background image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image in place when scrolling */
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #e0dfdf;
+    color: rgb(14, 11, 11);
     padding: 1rem;
     text-align: center;
 }
