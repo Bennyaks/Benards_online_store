@@ -1,0 +1,20 @@
+<div id="cart-items"></div>
+<script src="scripts/main.js"></script>
+<script>
+    function renderCart() {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const container = document.getElementById("cart-items");
+        container.innerHTML = "";
+
+        cart.forEach(item => {
+            container.innerHTML += `
+                <div class="cart-item">
+                    <p>${item.name} - ${item.quantity} x $${item.price}</p>
+                    <button onclick="removeFromCart(${item.id})">Remove</button>
+                </div>
+            `;
+        });
+    }
+
+    renderCart();
+</script>
